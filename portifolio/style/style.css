@@ -1,0 +1,120 @@
+:root {
+    --cor-primaria: #4C4C6D;
+    --cor-secundaria: #FFE194;
+    --cor-terciaria: #1B9C85;
+
+    --fonte-primaria: 'Montserrat', 'sans-serif';
+    --fonte-secundaria: 'Krona One', 'sans-serif';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    /* height: 100vh; */
+    background-color: black;
+    box-sizing: border-box;
+    color: var(--cor-secundaria);
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho-menu-link {
+    font-family:  var(--fonte-primaria);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.titulo-destaque {
+    color: var(--cor-terciaria);
+}
+
+.apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 15%;
+}
+
+.apresentacao-conteudo {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.apresentacao-conteudo-titulo {
+    font-size: 27px;
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao-conteudo-texto {
+    font-size: 20px;
+    font-family: var(--fonte-primaria);
+}
+
+.apresentacao-imagem {
+    justify-content: end;
+    width: 350px;
+    padding: 15px;
+}
+
+.apresentacao-links {
+    display: flex;
+    gap: 28px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao-links-subtitulo {
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.apresentacao-links-link {
+    /* background-color: #22D4FD; */
+    width: 290px;
+    display: flex;
+    justify-content: center;
+    border: 2px solid var(--cor-terciaria);
+    text-align: center;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 15px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    gap: 13px;
+}
+
+.tamanho-icon {
+    width: 20px;
+}
+
+.apresentacao-links-link:hover {
+    background-color: #272727;
+}
+
+.rodape {
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fonte-primaria);
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    
+}
