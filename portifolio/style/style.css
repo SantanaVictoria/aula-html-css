@@ -20,6 +20,7 @@ body {
 
 .cabecalho {
     padding: 2% 0% 0% 15%;
+
 }
 
 .cabecalho-menu {
@@ -29,7 +30,7 @@ body {
 
 .cabecalho-menu-link {
     font-family:  var(--fonte-primaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--cor-terciaria);
     text-decoration: none;
@@ -44,22 +45,23 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 5% 15%;
+    gap: 55px;
 }
 
 .apresentacao-conteudo {
-    width: 600px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
 .apresentacao-conteudo-titulo {
-    font-size: 27px;
+    font-size: 1.68rem;
     font-family: var(--fonte-secundaria);
 }
 
 .apresentacao-conteudo-texto {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: var(--fonte-primaria);
 }
 
@@ -80,19 +82,19 @@ body {
 .apresentacao-links-subtitulo {
     font-family: var(--fonte-secundaria);
     font-weight: 400;
-    font-size: 15px;
+    font-size: 0.93rem;
 }
 
-.apresentacao-links-link {
+.apresentacao-links-navegacao {
     /* background-color: #22D4FD; */
-    width: 290px;
+    width: 50%;
     display: flex;
     justify-content: center;
     border: 2px solid var(--cor-terciaria);
     text-align: center;
     border-radius: 8px;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1rem;
     padding: 15px 0;
     text-decoration: none;
     color: var(--cor-secundaria);
@@ -108,13 +110,37 @@ body {
     background-color: #272727;
 }
 
+.apresentacao-imagem {
+    width: 50%;
+}
+
 .rodape {
     padding: 24px;
     text-align: center;
     font-family: var(--fonte-primaria);
-    font-size: 17px;
+    font-size: 1.06rem;
     font-weight: 400;
     color: var(--cor-primaria);
     background-color: var(--cor-terciaria);
     
+}
+
+@media (max-width: 1200px){
+    
+    .cabecalho {
+        padding: 11%;
+    }
+
+    .cabecalho-menu {
+        justify-content: center;
+    }
+    
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao-conteudo {
+        width: auto;
+    }
 }
